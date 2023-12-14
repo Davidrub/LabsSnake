@@ -29,6 +29,7 @@ public class Mundo {
     public Mundo() {
         jollyroger = new JollyRoger();
         colocarBotin();
+        //colocarGrinch();
     }
     // Estrategia de colocación del botín.
     private void colocarBotin() {

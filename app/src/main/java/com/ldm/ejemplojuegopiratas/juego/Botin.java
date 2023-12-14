@@ -5,6 +5,9 @@ public class Botin {
     public static final int TIPO_2 = 1;
     public static final int TIPO_3 = 2; // cosntante que codifican el tipo de botín
 
+    //Constante para la aparicion del grinch
+    // public static final int TIPO_3 = 3;
+
     public int x, y; //Coordendas XY que cada botín tendrá asignadas paraq ue el ocupe una velda en el oceano
     public int tipo;
 
