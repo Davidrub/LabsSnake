@@ -6,7 +6,12 @@ public class Mundo {
     // Definición de constantes
     static final int MUNDO_ANCHO = 10;
     static final int MUNDO_ALTO = 13;
-    static final int INCREMENTO_PUNTUACION = 10;
+
+    //Puntuaciones que se consiguen dependiendo del tipo de regalo que sea
+    static final int INCREMENTO_PUNTUACIONTIPO1 = 10;
+    static final int INCREMENTO_PUNTUACIONTIPO2 = 20;
+    static final int INCREMENTO_PUNTUACIONTIPO3 = 30;
+
     static final float TICK_INICIAL = 0.5f;
     static final float TICK_DECREMENTO = 0.05f;
 
@@ -85,7 +90,15 @@ public class Mundo {
             // Si es así, el juego tiene que finalizar y hace un return para volver desde la función.
             Tripulacion head = jollyroger.partes.get(0);
             if (head.x == botin.x && head.y == botin.y) {
-                puntuacion += INCREMENTO_PUNTUACION;
+                if(botin.tipo == Botin.TIPO_1){
+                    puntuacion += INCREMENTO_PUNTUACIONTIPO1;
+                } else if (botin.tipo == Botin.TIPO_2) {
+                    puntuacion += INCREMENTO_PUNTUACIONTIPO2;
+                }
+                else{
+                    puntuacion += INCREMENTO_PUNTUACIONTIPO3;
+                }
+
                 jollyroger.abordaje();
                 if (jollyroger.partes.size() == MUNDO_ANCHO * MUNDO_ALTO) {
                     finalJuego = true;

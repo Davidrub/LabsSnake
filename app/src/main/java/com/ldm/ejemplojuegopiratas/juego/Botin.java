@@ -11,6 +11,7 @@ public class Botin {
     public int x, y; //Coordendas XY que cada botín tendrá asignadas paraq ue el ocupe una velda en el oceano
     public int tipo;
 
+
     public Botin(int x, int y, int tipo) {
         this.x = x;
         this.y = y;
