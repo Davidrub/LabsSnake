@@ -96,7 +96,7 @@ public class Mundo {
                     puntuacion += INCREMENTO_PUNTUACIONTIPO2;
                 }
                 else{
-                    puntuacion += INCREMENTO_PUNTUACIONTIPO3;
+                    puntuacion += INCREMENTO_PUNTUACIONTIPO3; 
                 }
 
                 jollyroger.abordaje();
