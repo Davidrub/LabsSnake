@@ -24,8 +24,10 @@ public class Assets {
     public static Pixmap botin2;
     public static Pixmap botin3;
 
+    //asset del grinch
+
     public static Sonido pulsar;
     public static Sonido ataque;
-    public static Sonido derrota;
+    public static Sonido derrota;  // Continene todas las Assets utilizadas en el juego
 
 }
